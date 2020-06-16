@@ -21,11 +21,11 @@ nav {
     background-color: lightgray;
     height: 250px;
 }
-.more-styles {
+.hank-style {
     color: white;
     background-color: teal;
 }
-#another-style {
+#cool-style {
     border: 5px solid brown;
 }
 section p.more-styles {
@@ -33,13 +33,14 @@ section p.more-styles {
     background-color: coral;
 }
 
-.more-styles {
+.hank-style {
     color: oldlace;
     background-color: #006600;
 }
 
-#another-style {
+#cool-style {
     border: 5px solid #006600;
+    font-style: italic;
 }
 
 footer {

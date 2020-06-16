@@ -1,17 +1,26 @@
 'use script'
 console.log('This file is connected.')
 
-var userName = prompt('What is your name?')
-console.log(userName)
+var userName = prompt('What is your name?');
+var lowerCaseName = userName.toLowerCase();
+console.log(lowerCaseName);
+alert('Hello ' + userName);
 
-alert('Hello ' + userName)
-var lowerCaseName = userName.toLowerCase()
-console.log(lowerCaseName)
 
-if (lowerCaseName === 'jen' || lowerCaseName === 'bob') {
-  alert('Welcome back to my page ' + userName)
+if (lowerCaseName === 'jen' || lowerCaseName === 'hank'); {
+  alert('Welcome back to my page ' + userName);
 } else {
-  alert('Welcome, friend, to my page.')
+  alert('Welcome, friend, to my page.');
+}
+
+var myEduc = ('Did I go to college in the United States?');
+var upperCaseEduc = myEduc.toUpperCase();
+console.log(upperCaseEduc);
+
+if (myEduc = 'YES'); {
+alert ('Correct!');
+} else {
+  alert ('Oh, snap! It\'s true. I went to USD in South Dakota.');
 }
 
 var myBooleanValueTrue = true
