@@ -1,0 +1,47 @@
+body {
+    margin: 0 auto;
+    width: 1000px;
+    background-color: rgba (142,209,153,0.6);   
+}
+main {
+    background-color: seagreen;
+}
+ul li {
+    display: inline;
+    padding: 10px;
+    background-color: seashell;
+}
+h1 {
+    background-color: skyblue;
+    color: black;
+    font-size: 40px;
+    text-shadow:2px 2px ivory;
+}
+nav {
+    background-color: lightgray;
+    height: 250px;
+}
+.more-styles {
+    color: white;
+    background-color: teal;
+}
+#another-style {
+    border: 5px solid brown;
+}
+section p.more-styles {
+
+    background-color: coral;
+}
+
+.more-styles {
+    color: oldlace;
+    background-color: #006600;
+}
+
+#another-style {
+    border: 5px solid #006600;
+}
+
+footer {
+    margin-top: 15px;
+}
