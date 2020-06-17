@@ -42,3 +42,40 @@ body {
 main {
     background-color: moccasin;
 }
+
+ul li {
+    display: inline;
+    padding: 10px;
+    background-color: seashell;
+}
+h1 {
+    background-color: skyblue;
+    color: black;
+    font-size: 40px;
+    text-shadow:2px 2px ivory;
+}
+nav {
+    background-color: lightgray;
+    height: 250px;
+}
+.hank-style {
+    color: white;
+    background-color: teal;
+}
+#school-style {
+    border: 5px solid brown;
+}
+section p.career-style {
+
+    background-color: coral;
+}
+
+.hank-style {
+    color: oldlace;
+    background-color: #006600;
+}
+
+#school-style {
+    border: 5px solid #006600;
+    font-style: italic;
+}
