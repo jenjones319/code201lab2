@@ -1,0 +1,11 @@
+while (var i = 0; i <= 4; i++) {
+  if (i !== 9) {
+    console.log('Nope, guess again!');
+    continue;
+  }
+  if (i === 9) {
+    console.log('this is now breaking the loop.');
+    break;
+  }
+  console.log('the variable i:');
+}

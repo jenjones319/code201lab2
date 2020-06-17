@@ -8,19 +8,10 @@ alert('Hello ' + userName);
 var lowerCaseName = userName.toLowerCase();
 /* console.log(lowerCaseName); */
 
-if (lowerCaseName === 'jen' || lowerCaseName === 'hank') {
+if (lowerCaseName === 'jen') {
   alert('Welcome back, ' + userName + ' I missed you!');
 } else {
   alert('Welcome, friend, to my page.');
-}
-
-while (!user) {
-  user = prompt('Please type your name before pressing enter.');
-}
-
-if (userName != 'jen') {
-  console.log(userName);
-  alert('These aren\'t the droids you\'re looking for.');
 }
 
 var myEduc = prompt('Did I go to college in the United States? Yes or No.');
@@ -73,22 +64,6 @@ if (upperCaseKids === 'YES' || upperCaseKids === 'Y') {
 
 var userPoints = 0;
 
-// the user variable
-// - string
-// - null
-// "" empty
-
-//if the user is empty string or null, keep asking them for their name. 
-// while(user ==='' || user === null) { do something. }
-// shorter version
-
-//control flow, in js
-
-//if(condition){do this}
-//if(condition){do this} else if { do this} else {do this thing}
-
-//This is the not equals comparison operator.
-
 var answer = prompt('Is my dog named Hank?');
 //console.log(answer);
 
@@ -102,19 +77,19 @@ if (answer === 'yes' || answer === 'y') {
   console.log('this is the user point total', userPoints);
 }
 
-for (var i = 0; i < 100; i++) {
-  if (i === 2) {
-    console.log('keep going past the number 2.');
-    continue;
-  }
-  if (i === 4) {
-    console.log('this is now breaking the loop.');
-    break;
-  }
-  console.log('the variable i:');
+var numberGuess = prompt('Hey, guess a number between 1 and 10!')
+//console.log(numberGuess);
+
+if (numberGuess > 9) {
+  alert('Guess again! Lower this time...');
+} else if (numberGuess < 9) {
+  alert('Guess again! Higher this time...');
+} else if (numberGuess = 9) {
+  alert('Awesome job! The correct answer is 9.');
 }
 
-var placesILike = ['new york', 'chicago', 'miami', 'minneapolis'];
+
+var placesILike = ['new york', 'chicago', 'miami', 'minneapolis', 'mexico city', 'portland', 'boston', 'los angeles', 'phoenix'];
 console.log(placesILike);
 
 for (var x = 0; x < placesILike.length; x++) {
