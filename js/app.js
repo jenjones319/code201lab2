@@ -1,6 +1,8 @@
 'use strict';
 console.log('This file is connected.');
 
+var userPoints = 0
+
 var userName = prompt('What is your name?');
 // console.log(userName);
 alert('Hello ' + userName);
@@ -22,6 +24,9 @@ var upperCaseEduc = myEduc.toUpperCase();
 
 if (upperCaseEduc === 'YES' || upperCaseEduc === 'Y') {
   alert('Correct!');
+  userPoints = userPoints + 1;
+  userPoints += 1;
+  console.log('This is the user point total', userPoints);
 } else {
   alert('Oh, snap! It\'s true. I went to USD in South Dakota.');
 }
@@ -34,6 +39,9 @@ var lowerCaseTravel = myTravel.toLowerCase();
 
 if (lowerCaseTravel === 'no' || lowerCaseTravel === 'n') {
   alert('You are right. I don\'t want to go to China.');
+  userPoints = userPoints + 1;
+  userPoints += 1;
+  console.log('This is the user point total', userPoints);
 } else {
   alert('China is not on my bucket list.');
 }
@@ -46,6 +54,9 @@ var lowerCasePets = myPets.toLowerCase();
 
 if (lowerCasePets === 'y' || lowerCasePets === 'yes') {
   alert('Yes, I do! Correct.');
+  userPoints = userPoints + 1;
+  userPoints += 1;
+  console.log('This is the user point total', userPoints);
 } else {
   alert('Nope, the answer is yes. I love dogs.');
 }
@@ -58,11 +69,14 @@ var upperCaseKids = myKids.toUpperCase();
 
 if (upperCaseKids === 'YES' || upperCaseKids === 'Y') {
   alert('You\'re a good guesser!');
+  userPoints = userPoints + 1;
+  userPoints += 1;
+  console.log('This is the user point total', userPoints);
 } else {
   alert('Yeah, I do. I have a son.');
 }
 
-var userPoints = 0;
+//var userPoints = 0;
 
 var answer = prompt('Is my dog named Hank?');
 //console.log(answer);
@@ -87,6 +101,9 @@ for (var i = 0; i < 4; i++) {
     alert('Guess again! Higher this time...');
   } else if (numberGuess === 9) {
     alert('Awesome job! The correct answer is 9.');
+    userPoints = userPoints + 1;
+    userPoints += 1;
+    console.log('This is the user point total', userPoints);
     break;
   } else {
     alert('Guess a number between 1 and 10!');
@@ -102,7 +119,7 @@ while (lastChance > 0) {
 
   console.log('Inside while loop');
 
-  alert(userName + 'guess what city I have never visited...');
+  alert(userName + ' guess what city I have never visited...');
   var guess = prompt('Options are: New York, Chicago, Miami, Minneapolis, Mexico City, Portland, Boston, Los Angeles, Phoenix, Hong Kong, Beijing');
   var match = false;
 
@@ -117,11 +134,15 @@ while (lastChance > 0) {
   }
   if (match === false) {
     alert('Good job! I\'ve never been there before!');
+    userPoints = userPoints + 1;
+    userPoints += 1;
+    console.log('This is the user point total', userPoints);
     break;
   } else {
     alert('Try again.');
   }
-
   console.log('array push', placesILike);
   lastChance--;
 }
+
+alert(userName + 'This is your guessing game point total: ' + userPoints);
