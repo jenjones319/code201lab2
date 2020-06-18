@@ -7,14 +7,21 @@
 
 body {
     margin: 0 auto;
-    width: 1200px;
+    width: 1000px;
     background-color: mediumslateblue;
     margin: 25px 0px 25px 0px;
 }
 
 main {
-    background-color: moccasin;
+    background-color: seagreen;
 }
+
+ul li {
+    display: inline;
+    padding: 10px;
+    background-color: seashell;
+}
+
 h1 {
     background-color: skyblue;
     color: black;
