@@ -87,10 +87,20 @@ if (numberGuess > 9) {
 } else if (numberGuess = 9) {
   alert('Awesome job! The correct answer is 9.');
 }
+// while(user ==='' || user === null) { do something. }
+// shorter version
 
+while (numberGuess !== 9) {
+  numberGuess = prompt('Guess a number between 1 and 10!');
+}
 
 var placesILike = ['new york', 'chicago', 'miami', 'minneapolis', 'mexico city', 'portland', 'boston', 'los angeles', 'phoenix'];
 console.log(placesILike);
+
+var lastChance = 6;
+while (lastchance > 0){
+
+  var guess = prompt(userName + 'guess what city I have never visited...')
 
 for (var x = 0; x < placesILike.length; x++) {
   console.log('for loop doing work', placesILike[x])
