@@ -53,7 +53,7 @@ var lowerCasePets = myPets.toLowerCase();
 // console.log(lowerCasePets);
 
 if (lowerCasePets === 'y' || lowerCasePets === 'yes') {
-  alert('Yes, I do! Correct.');
+  alert('Yes, I do! I am a dog person. Correct!');
   userPoints = userPoints + 1;
   userPoints += 1;
   console.log('This is the user point total', userPoints);
