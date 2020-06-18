@@ -145,4 +145,4 @@ while (lastChance > 0) {
   lastChance--;
 }
 
-alert(userName + 'This is your guessing game point total: ' + userPoints);
+alert(userName + ' -this is your guessing game point total: ' + userPoints);
