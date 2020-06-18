@@ -77,34 +77,51 @@ if (answer === 'yes' || answer === 'y') {
   console.log('this is the user point total', userPoints);
 }
 
-var numberGuess = prompt('Hey, guess a number between 1 and 10!')
 //console.log(numberGuess);
 
-if (numberGuess > 9) {
-  alert('Guess again! Lower this time...');
-} else if (numberGuess < 9) {
-  alert('Guess again! Higher this time...');
-} else if (numberGuess = 9) {
-  alert('Awesome job! The correct answer is 9.');
+for(var i = 0; i < 4; i++) {
+  var numberGuess = Number(prompt('Hey, guess a number between 1 and 10!'));
+  if (numberGuess > 9) {
+    alert('Guess again! Lower this time...');
+  } else if (numberGuess < 9) {
+    alert('Guess again! Higher this time...');
+  } else if (numberGuess === 9) {
+    alert('Awesome job! The correct answer is 9.');
+    break;
+  } else {
+    alert('Guess a number between 1 and 10!');
+  }
 }
-// while(user ==='' || user === null) { do something. }
-// shorter version
 
-while (numberGuess !== 9) {
-  numberGuess = prompt('Guess a number between 1 and 10!');
-}
-
-var placesILike = ['new york', 'chicago', 'miami', 'minneapolis', 'mexico city', 'portland', 'boston', 'los angeles', 'phoenix'];
-console.log(placesILike);
+var placesILike = ['new york', 'chicago', 'miami', 'minneapolis', 'mexico city', 'portland', 'boston', 'los angeles'];
+// placesILike.push('rome');
+// console.log(placesILike);
 
 var lastChance = 6;
-while (lastchance > 0){
+while (lastChance > 0) {
+  
+  console.log('Inside while loop');
+  
+  alert(userName + 'guess what city I have never visited...');
+  var guess = prompt('Options are: New York, Chicago, Miami, Minneapolis, Mexico City, Portland, Boston, Los Angeles, Phoenix, Hong Kong, Beijing');
+  var match = false;
 
-  var guess = prompt(userName + 'guess what city I have never visited...')
+  for (var i = 0; i < placesILike.length; i++) {
+    if(guess === placesILike[i]) {
+      alert('Nope, I\'ve been there before!');
+      match = true;
+      break;
+    } else {
+      console.log('incorrect answer', placesILike[i]);
+    }
+  }
+  if(match === false) {
+    alert('Good job! I\'ve never been there before!');
+    break;
+  } else {
+    alert('Try again.');
+  }
 
-for (var x = 0; x < placesILike.length; x++) {
-  console.log('for loop doing work', placesILike[x])
+  console.log('array push', placesILike);
+  lastChance--;
 }
-placesILike.push('rome');
-console.log('array push', placesILike);
-
