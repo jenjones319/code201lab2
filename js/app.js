@@ -3,6 +3,7 @@ console.log('This file is connected.');
 
 var userPoints = 0
 
+function getUserName() {
 var userName = prompt('What is your name?');
 // console.log(userName);
 alert('Hello ' + userName);
@@ -15,7 +16,11 @@ if (lowerCaseName === 'jen') {
 } else {
   alert('Welcome, friend, to my page.');
 }
+}
 
+getUserName();
+
+function getEducation() {
 var myEduc = prompt('Did I go to college in the United States? Yes or No.');
 // console.log(myEduc);
 
@@ -30,7 +35,11 @@ if (upperCaseEduc === 'YES' || upperCaseEduc === 'Y') {
 } else {
   alert('Oh, snap! It\'s true. I went to USD in South Dakota.');
 }
+}
 
+getEducation ();
+
+function getTravel() {
 var myTravel = prompt('Do I want to travel to China? Yes or No.');
 // console.log(myTravel);
 
@@ -45,7 +54,11 @@ if (lowerCaseTravel === 'no' || lowerCaseTravel === 'n') {
 } else {
   alert('China is not on my bucket list.');
 }
+}
 
+getTravel();
+
+function getPets() {
 var myPets = prompt('Do I have any pets? Y or N?');
 // consolelog(myPets);
 
@@ -60,6 +73,11 @@ if (lowerCasePets === 'y' || lowerCasePets === 'yes') {
 } else {
   alert('Nope, the answer is yes. I love dogs.');
 }
+}
+
+getPets();
+
+function getKids() {
 
 var myKids = prompt('Do I have any children? Yes or No?');
 // console.log(myKids);
@@ -75,9 +93,13 @@ if (upperCaseKids === 'YES' || upperCaseKids === 'Y') {
 } else {
   alert('Yeah, I do. I have a son.');
 }
+}
+
+getKids();
 
 //var userPoints = 0;
 
+function getHank() {
 var answer = prompt('Is my dog named Hank?');
 //console.log(answer);
 
@@ -90,9 +112,13 @@ if (answer === 'yes' || answer === 'y') {
   alert(' Oh, sorry, no points for you. His name really is hank');
   console.log('this is the user point total', userPoints);
 }
+}
+
+getHank();
 
 //console.log(numberGuess);
 
+function getNumberGuess() {
 for (var i = 0; i < 4; i++) {
   var numberGuess = Number(prompt('Hey, guess a number between 1 and 10!'));
   if (numberGuess > 9) {
@@ -109,7 +135,12 @@ for (var i = 0; i < 4; i++) {
     alert('Guess a number between 1 and 10!');
   }
 }
+}
 
+getNumberGuess();
+
+
+function getPlaces() {
 var placesILike = ['new york', 'chicago', 'miami', 'minneapolis', 'mexico city', 'portland', 'boston', 'los angeles'];
 // placesILike.push('rome');
 // console.log(placesILike);
@@ -144,5 +175,8 @@ while (lastChance > 0) {
   console.log('array push', placesILike);
   lastChance--;
 }
+}
 
-alert(userName + ' -this is your guessing game point total: ' + userPoints);
+getPlaces();
+
+alert('This is your guessing game point total: ' + userPoints);
