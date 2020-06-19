@@ -2,7 +2,7 @@
 console.log('This file is connected.');
 
 var userPoints = 0
-var userName = ()
+var userName
 
 function getUserName() {
 userName = prompt('What is your name?');
