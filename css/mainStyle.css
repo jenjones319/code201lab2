@@ -8,18 +8,19 @@
 body {
     margin: 0 auto;
     width: 1000px;
-    background-color: mediumslateblue;
+    background-color: darkgrey;
     margin: 25px 0px 25px 0px;
 }
 
 main {
-    background-color: seagreen;
+    background-color: lightblue;
 }
 
 ul li {
     display: inline-block;
     padding: 10px;
     background-color: seashell;
+    width: fit-content;
 }
 
 h1 {
@@ -30,21 +31,16 @@ h1 {
 }
 nav {
     background-color: lightgray;
-    height: 25px;
+    height: 60px;
 }
 .hank-style {
-    color: white;
-    background-color: teal;
+    color: black
 }
 #school-style {
-    border: 5px solid brown;
-}
-#school-style {
-    border: 5px solid #006600;
-    font-style: italic;
+    border: 1px solid rgb(113, 160, 199);
 }
 #footer-style {
-    border: 3px dashed teal;
     padding: 5px;
-    background-color: thistle;
+    background-color: seashell;
+    text-align: center;
 }
